@@ -1,6 +1,7 @@
 /* Global */
 html{
 	box-sizing: border-box;
+    font-size: 62.5%
 }
 *, *:before, *:after{
 	box-sizing: inherit;
@@ -8,63 +9,104 @@ html{
 body{
     margin: 0;
 }
-
+img{
+	max-width: 100%;
+	display: block;
+}
+h1{
+    font-size: 4.5rem;
+}
 a{
     text-decoration: none;
     color: #000;
+    font-size: 2rem;
+    height: 100%;
+    text-align: center;
+    padding-top: 3.5rem;
+    transition: background-color 0.2s;
 }
-button{
-    text-decoration: none;
-    border: none;
-    background-color:  	#dcf0fa;
+a:hover{
+    background-color: #6fa5be;
+}
+.btn{
+    background-color: #10242e;
     border-radius: 3rem;
-    padding: 0.8rem;
+    padding: 1.5rem 2rem;
+    color: #ffffff;
+    text-align: center;
 }
+/* HEADER SECTION */
 header{
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    border-bottom: 1px solid #000;
-    background-color:  	#50b8e7;
-    padding-left: 5rem;
+    background-color:  #84cdee;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+}
+
+.nav-container{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+    width: 80%;
+    height: 100%;
+
 }
 .box-title{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
+
 .box-icon{
-    max-width: 3rem;
-    height: 2rem;
-    padding-left: 1rem;
+    max-width: 6rem;
+    padding-right: 0.7rem;
 }
+
 .box-icon img{
     max-width: 100%;
-    height: auto;
+    height:max-content;
 }
 
-.flex-container{
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem;
-    width: 50%;
+.child:first-child{
+    flex: 8;
 }
+.child:not(:first-child){
+    flex: 1;
+}
+
+
+/* HERO SECTION */
 .hero{
-    background-color: #b9e2f5;
-    padding-left: 5rem;
+    background-image: url(../img/background-hero.avif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 40%;
 
+    padding-left: 5rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 .hero-box{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 4rem;
 
 }
 .hero h2{
-    font-size: 5rem;
+    font-size: 15rem;
     padding-left: 1rem;
     margin-bottom: 0;
     display: inline;
+    color: #000;
 }
 .hero-box p{
     font-size: 2rem;
@@ -83,4 +125,19 @@ header{
     padding: 0;
     margin: 0.2rem;
     font-size: 1.3rem;
+    color: #ffffff;
+}
+/* TRENDING SECTION*/
+.trending-box{
+    margin: 4rem;
+}
+.trending-box h3{
+    display: inline;
+}
+.box-flex{
+    display: flex;
+
+ 
+    align-items: center;
+    
 }
